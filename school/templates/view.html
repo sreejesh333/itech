@@ -1,0 +1,27 @@
+{% include "base.html"%}
+{% load static%}
+
+
+            
+           
+    <div class="card-columns">
+        {% for view in students %}
+             
+           <div class="card" style="width:18rem;height: 21rem;margin-left: 20px;border-radius: 8px;box-shadow: 4px 4px 4px black;">
+              <div class="card-body">
+               
+                <h5 class="card-title" >Registered details</h5>
+                <label>name:</label>  <h5 class="card-title" >{{view.first_name}}</h5>
+                <label>phn no:</label> <h5>{{view.phone}}</h5>
+                <label>Course selected:</label> <h5 class="card-title">{{view.course}}</h5>
+                <label>Address:</label> <h5 class="card-text">{{view.address}}</h5>
+                <label>Date of apply:</label> <h5 class="card-text">{{view.date_created}}</h5>
+                
+              </div>
+            </div>
+            
+        {% endfor %}
+    </div>
+        
+  
+

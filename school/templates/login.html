@@ -1,0 +1,22 @@
+{% include "base.html"%}
+{% load static %}
+
+<form method="post">
+    {% csrf_token %}
+    <h1 id="reg">Login Form</h1>
+    <input id="input" placeholder="First name" type="text" name="first_name" required><br>
+    <input placeholder="last name" type="text" name="last_name" required><br>
+    <input placeholder="phone number" type="number" name="phone" required><br>
+    
+    <input placeholder="email:abc@gmail.com"type="email" name="email" required><br>
+
+    <input placeholder="Date of birth" type="date" name="date_of_birth" required><br>
+    <input placeholder="marks in cgpa"type="number" name="mark1" required><br>
+    
+    <input placeholder="course requires" type="text" name="course" required><br>
+  
+    <input placeholder="address" type="text" name="address" required><br>
+
+                        
+    <button style="background-color: rgb(45, 196, 45);" type="submit" onclick="abc()">Submit</button>
+  </form>
