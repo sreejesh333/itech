@@ -111,7 +111,7 @@ $(".close").click(function(){
 
 
 
-<section  class="courses">
+<section id="courses" class="courses">
    <div class="container-fluid"> 
   <div class="row" style="width: 100%; height: auto;">
     <div class="col-sm-12" style="color: white;text-align: center;margin-top:100px;">
@@ -139,11 +139,11 @@ $(".close").click(function(){
                   </div>
                   
                   <div class="card-body1" >
-                    <a style="border: solid 0.5rem rgb(1, 1, 49) ;text-decoration: none;color:white ;background-color:rgb(1, 1, 49) ;border-radius: 7px;" href="{% url 'contact' %}">Register</a>
+                    <a style="border: solid 0.5rem rgb(1, 1, 49) ;text-decoration: none;color:white ;background-color:rgb(1, 1, 49) ;border-radius: 7px;" href="{% url 'school:contact' %}">Register</a>
                     {% if card.heading == "Foundation Level" %}
-                    <a style="border: solid 0.5rem rgb(1, 1, 49) ;text-decoration: none;color:white ;background-color:rgb(1, 1, 49) ;border-radius: 7px;" href="{% url 'abc' %}">Know more</a>
+                    <a style="border: solid 0.5rem rgb(1, 1, 49) ;text-decoration: none;color:white ;background-color:rgb(1, 1, 49) ;border-radius: 7px;" href="{% url 'school:abc' %}">Know more</a>
                     {% else %}
-                    <a style="border: solid 0.5rem rgb(1, 1, 49) ;text-decoration: none;color:white ;background-color:rgb(1, 1, 49) ;border-radius: 7px;" href="{% url 'advanced' %}">Know more</a>
+                    <a style="border: solid 0.5rem rgb(1, 1, 49) ;text-decoration: none;color:white ;background-color:rgb(1, 1, 49) ;border-radius: 7px;" href="{% url 'school:advanced' %}">Know more</a>
                     {% endif %}
                     </div>
               </div>
